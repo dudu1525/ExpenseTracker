@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane styleClass="secbackground"  prefHeight="650.0" prefWidth="900.0" stylesheets="@../stylesheets/filtercss.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafiles.controllers.FilterController">
+   <children>
+      <Button fx:id="backbtn" layoutX="793.0" layoutY="26.0" mnemonicParsing="false" onAction="#goBack" prefHeight="35.0" prefWidth="63.0" text="back" />
+      <Text fx:id="mainlabel" layoutX="42.0" layoutY="50.0" text="Label">
+         <font>
+            <Font size="22.0" />
+         </font></Text>
+      <ScrollPane layoutX="42.0" layoutY="118.0">
+         <content>
+            <VBox fx:id="box1" prefHeight="416.0" prefWidth="166.0" styleClass="expense-container" />
+         </content>
+      </ScrollPane>
+      <Label layoutX="54.0" layoutY="90.0" text="Food" />
+      <ScrollPane layoutX="208.0" layoutY="118.0">
+         <content>
+            <VBox fx:id="box2" prefHeight="416.0" prefWidth="166.0" styleClass="expense-container" />
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="374.0" layoutY="118.0">
+         <content>
+            <VBox fx:id="box3" prefHeight="416.0" prefWidth="166.0" styleClass="expense-container" />
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="540.0" layoutY="118.0">
+         <content>
+            <VBox fx:id="box4" prefHeight="416.0" prefWidth="166.0" styleClass="expense-container" />
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="706.0" layoutY="118.0">
+         <content>
+            <VBox fx:id="box5" prefHeight="416.0" prefWidth="166.0" styleClass="expense-container" />
+         </content>
+      </ScrollPane>
+      <Label layoutX="222.0" layoutY="90.0" prefHeight="17.0" prefWidth="69.0" text="Transport" />
+      <Label layoutX="410.0" layoutY="90.0" prefHeight="17.0" prefWidth="51.0" text="Utilities" />
+      <Label layoutX="573.0" layoutY="90.0" prefHeight="17.0" prefWidth="100.0" text="Entertainment" />
+      <Label layoutX="728.0" layoutY="90.0" text="Other" />
+      <Label fx:id="foodspent" layoutX="48.0" layoutY="544.0" prefHeight="17.0" prefWidth="144.0" styleClass="label1" text="Total spent:" />
+      <Label fx:id="transportspent" layoutX="208.0" layoutY="544.0" prefHeight="17.0" prefWidth="144.0" styleClass="label1" text="Total spent" />
+      <Label fx:id="utilspent" layoutX="374.0" layoutY="544.0" prefHeight="17.0" prefWidth="154.0" styleClass="label1" text="Total spent:" />
+      <Label fx:id="entertainmentspent" layoutX="545.0" layoutY="544.0" prefHeight="17.0" prefWidth="144.0" styleClass="label1" text="Total spent:" />
+      <Label fx:id="otherspent" layoutX="714.0" layoutY="544.0" prefHeight="17.0" prefWidth="144.0" styleClass="label1" text="Total spent:" />
+      <Text fx:id="totall" layoutX="269.0" layoutY="606.0" text="Total spent in the period:">
+         <font>
+            <Font name="Cambria" size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

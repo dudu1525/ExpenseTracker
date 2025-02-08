@@ -1,0 +1,3 @@
+username=postgres
+password=d15092004
+path=jdbc:postgresql://localhost:5432/expensetracker

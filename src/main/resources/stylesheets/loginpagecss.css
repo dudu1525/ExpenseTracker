@@ -1,0 +1,61 @@
+.root {
+    -fx-background-color: #f4f4f9;
+    -fx-font-family: 'Arial';
+}
+.title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+.button {
+    -fx-background-color: #0078d4;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-font-size: 14px;
+}
+
+.button:hover {
+    -fx-background-color: #005bb5;
+    -fx-text-fill: #e0e0e0;
+}
+.textfield {
+    -fx-padding: 10px;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 14px;
+    -fx-background-color: #ffffff;
+    -fx-border-width: 1px;
+}
+
+.textfield:focused {
+    -fx-border-color: #0078d4;
+    -fx-border-width: 2px;
+}
+
+.textfield:hover {
+    -fx-border-color: #999;
+}
+
+.label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #555;
+    -fx-padding: 5px 0;
+}
+
+.mainbackground{
+    -fx-background-image: url("../images/background.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+.secbackground{
+    -fx-background-image: url("../images/background2.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}

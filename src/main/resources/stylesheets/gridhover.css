@@ -1,0 +1,21 @@
+.grid-cell{
+    -fx-background-color: #F4F4F4;
+}
+
+.grid-cell:hover {
+    -fx-background-color: lightblue;
+}
+
+.normal-cell{
+    -fx-background-color: #F4F4F4;
+
+}
+
+.day-cell{
+    -fx-background-color: #f4f4f4;
+    -fx-font: 20 Arial;
+}
+.day-cell:hover{
+    -fx-background-color: lightblue;
+
+}

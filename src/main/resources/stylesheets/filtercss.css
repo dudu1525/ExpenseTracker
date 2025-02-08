@@ -1,0 +1,29 @@
+.expense-container {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 4, 0.5, 0, 2);
+}
+
+
+.label {
+    -fx-font-size: 12px;
+    -fx-padding: 5px;
+    -fx-text-fill: #555;
+}
+.label1{
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+    -fx-text-fill: #555;
+    -fx-font-weight: bold;
+
+}
+
+.secbackground{
+    -fx-background-image: url("../images/background3.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}

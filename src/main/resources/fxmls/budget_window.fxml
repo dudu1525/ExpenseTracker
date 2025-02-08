@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane styleClass="secbackground" prefHeight="650.0" prefWidth="900.0" stylesheets="@../stylesheets/budgetcss.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafiles.controllers.BudgetController">
+   <children>
+      <Button layoutX="779.0" layoutY="40.0" mnemonicParsing="false" onAction="#goBack" prefHeight="39.0" prefWidth="63.0" text="Back" />
+      <AnchorPane layoutX="318.0" layoutY="48.0" prefHeight="291.0" prefWidth="380.0" styleClass="expense-container">
+         <children>
+      
+            <Arc fx:id="coloredarcgrey" centerX="95" centerY="95" fill="transparent" layoutX="94.0" layoutY="51.0" length="360" radiusX="132.0" radiusY="130.0" startAngle="90" stroke="grey" strokeWidth="10"  type="OPEN" />
+            <Arc fx:id="coloredarcred" centerX="95" centerY="95" fill="transparent" layoutX="94.0" layoutY="51.0" length="10" radiusX="132.0" radiusY="130.0" startAngle="90" stroke="red" strokeWidth="10" type="OPEN" />
+            <Label layoutX="112.0" layoutY="57.0" styleClass="label1" text="Money left to spend:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="budgetlabel" layoutX="135.0" layoutY="128.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="budgetbutton" layoutX="117.0" layoutY="185.0" mnemonicParsing="false" onAction="#setbudgetbox" prefHeight="31.0" prefWidth="147.0" text="out of">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="43.0" layoutY="40.0" prefHeight="39.0" prefWidth="184.0" styleClass="title" text="Monthly Budget">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <VBox layoutX="43.0" layoutY="134.05078125" styleClass="texts1">
+         <children>
+            <Text fx:id="available" strokeType="OUTSIDE" strokeWidth="0.0" text="Available" wrappingWidth="118.748046875" />
+         </children>
+      </VBox>
+      <VBox layoutX="43.0" layoutY="200.0" styleClass="texts1">
+         <children>
+            <Text fx:id="spent" strokeType="OUTSIDE" strokeWidth="0.0" text="Spent" wrappingWidth="118.748046875" />
+         </children>
+      </VBox>
+      <Label layoutX="43.0" layoutY="347.0" styleClass="label1" text="Budget by Category">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="43.0" layoutY="407.0" prefHeight="194.0" prefWidth="160.0" styleClass="expense-container">
+         <children>
+            <VBox fx:id="imgfood" layoutX="38.0" layoutY="14.0" prefHeight="51.0" prefWidth="63.0" styleClass="image1" />
+            <VBox layoutX="14.0" layoutY="85.0">
+               <children>
+                  <Label text="Food:" />
+               </children>
+            </VBox>
+            <Label fx:id="foodrem" layoutX="79.0" layoutY="85.0" text="Label" />
+            <Button layoutX="41.0" layoutY="119.0" mnemonicParsing="false" onAction="#updatefoodcat" text="Modify" />
+            <Label fx:id="foodbud" layoutX="14.0" layoutY="163.0" text="Budget:" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="203.0" layoutY="407.0" prefHeight="194.0" prefWidth="160.0" styleClass="expense-container">
+         <children>
+            <VBox fx:id="imgtrans" layoutX="53.0" layoutY="14.0" prefHeight="51.0" prefWidth="54.0" styleClass="image2" />
+            <VBox layoutX="14.0" layoutY="85.0">
+               <children>
+                  <Label text="Transport:" />
+               </children>
+            </VBox>
+            <Label fx:id="transrem" layoutX="79.0" layoutY="85.0" text="Label" />
+            <Button layoutX="40.0" layoutY="119.0" mnemonicParsing="false" onAction="#updatetransportcat" text="Modify" />
+            <Label fx:id="transbud" layoutX="15.0" layoutY="163.0" text="Budget:" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="357.0" layoutY="407.0" prefHeight="194.0" prefWidth="160.0" styleClass="expense-container">
+         <children>
+            <VBox fx:id="imgutil" layoutX="53.0" layoutY="14.0" prefHeight="51.0" prefWidth="54.0" styleClass="image3" />
+            <VBox layoutX="14.0" layoutY="85.0">
+               <children>
+                  <Label text="Utilities:" />
+               </children>
+            </VBox>
+            <Label fx:id="utilrem" layoutX="79.0" layoutY="85.0" text="Label" />
+            <Button layoutX="34.0" layoutY="119.0" mnemonicParsing="false" onAction="#updateutilcat" text="Modify" />
+            <Label fx:id="utilbud" layoutX="12.0" layoutY="163.0" text="Budget:" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="517.0" layoutY="407.0" prefHeight="194.0" prefWidth="160.0" styleClass="expense-container">
+         <children>
+            <VBox fx:id="imgenter" layoutX="53.0" layoutY="14.0" prefHeight="51.0" prefWidth="54.0" styleClass="image4" />
+            <VBox layoutX="14.0" layoutY="85.0">
+               <children>
+                  <Label text="Entertainment:" />
+               </children>
+            </VBox>
+            <Label fx:id="enterrem" layoutX="107.0" layoutY="85.0" text="Label" />
+            <Button layoutX="43.0" layoutY="119.0" mnemonicParsing="false" onAction="#updateentercat" text="Modify" />
+            <Label fx:id="enterbud" layoutX="12.0" layoutY="163.0" text="Budget:" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="676.0" layoutY="407.0" prefHeight="194.0" prefWidth="160.0" styleClass="expense-container">
+         <children>
+            <VBox fx:id="imgother" layoutX="53.0" layoutY="14.0" prefHeight="51.0" prefWidth="54.0" styleClass="image5" />
+            <VBox layoutX="14.0" layoutY="85.0">
+               <children>
+                  <Label text="Other:" />
+               </children>
+            </VBox>
+            <Label fx:id="otherrem" layoutX="79.0" layoutY="85.0" text="Label" />
+            <Button layoutX="40.0" layoutY="119.0" mnemonicParsing="false" onAction="#updateothercat" text="Modify" />
+            <Label fx:id="otherbud" layoutX="19.0" layoutY="163.0" text="Budget:" />
+         </children>
+      </AnchorPane>
+
+
+   </children>
+</AnchorPane>
